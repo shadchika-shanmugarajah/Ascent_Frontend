@@ -48,10 +48,10 @@ function App() {
 
         <div className="max-w-6xl mx-auto">
           {/* Tabs */}
-          <div className="flex space-x-4 mb-6 border-b border-gray-300">
+          <div className="flex space-x-4 mb-6 border-b border-gray-300 overflow-x-auto">
             <button
               onClick={() => setActiveTab('register')}
-              className={`px-6 py-3 font-semibold transition-colors ${
+              className={`px-6 py-3 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === 'register'
                   ? 'text-blue-600 border-b-2 border-blue-600'
                   : 'text-gray-600 hover:text-blue-500'
@@ -61,7 +61,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('list')}
-              className={`px-6 py-3 font-semibold transition-colors ${
+              className={`px-6 py-3 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === 'list'
                   ? 'text-blue-600 border-b-2 border-blue-600'
                   : 'text-gray-600 hover:text-blue-500'
